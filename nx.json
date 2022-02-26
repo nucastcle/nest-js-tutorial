@@ -1,5 +1,5 @@
 {
-  "npmScope": "nestjs-standard",
+  "npmScope": "nestjs-tutorial",
   "affected": {
     "defaultBase": "main"
   },
@@ -34,5 +34,5 @@
       }
     ]
   },
-  "defaultProject": "nest-standard"
+  "defaultProject": "tutorials"
 }

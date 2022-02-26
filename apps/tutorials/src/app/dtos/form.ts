@@ -5,6 +5,7 @@ export enum Type {
   Tutorial = 'tutorial'
 }
 export class FormDto {
+  
   @IsNotEmpty()
   @IsEmail()
   email: string;

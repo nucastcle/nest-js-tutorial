@@ -17,7 +17,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@nestjs-tutorial/exception": [
+        "libs/exception/src/index.ts"
+      ]
+    }
   },
   "exclude": [
     "node_modules",

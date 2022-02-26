@@ -1,7 +1,10 @@
+import { HttpExceptionFilter } from '@nestjs-tutorial/exception';
 import {
   Body,
   Controller,
+  Get,
   Post,
+  UseFilters,
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
@@ -13,7 +16,8 @@ export class ValidatesController {
 
   @Post('validate')
   @UsePipes(new ValidationPipe({ transform: true }))
-  validate(@Body() body: FormDto[]) {
+  @UseFilters(new HttpExceptionFilter())
+  validate(@Body() body: FormDto) {
     return 'OK';
   }
 
@@ -22,4 +26,5 @@ export class ValidatesController {
   nonValidate(@Body() body: FormDto) {
     return 'OK';
   }
+
 }

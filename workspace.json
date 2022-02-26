@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "exception": "libs/exception",
     "tutorials": "apps/tutorials"
   }
 }
