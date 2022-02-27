@@ -1,5 +1,6 @@
 import { Module } from '@nestjs/common';
 import { HttpExceptionFilter } from './http-exception.filter';
+import { MongoExceptionFilter } from './mongo.exception';
 
 @Module({
   controllers: [],
@@ -7,4 +8,4 @@ import { HttpExceptionFilter } from './http-exception.filter';
   exports: [],
 })
 export class ExceptionModule {}
-export { HttpExceptionFilter };
+export { HttpExceptionFilter, MongoExceptionFilter };

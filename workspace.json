@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "database": "libs/database",
     "exception": "libs/exception",
     "interceptor": "libs/interceptor",
     "tutorials": "apps/tutorials"

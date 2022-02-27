@@ -18,6 +18,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@nestjs-tutorial/database": [
+        "libs/database/src/index.ts"
+      ],
       "@nestjs-tutorial/exception": [
         "libs/exception/src/index.ts"
       ],
