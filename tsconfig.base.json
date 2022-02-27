@@ -20,6 +20,9 @@
     "paths": {
       "@nestjs-tutorial/exception": [
         "libs/exception/src/index.ts"
+      ],
+      "@nestjs-tutorial/interceptor": [
+        "libs/interceptor/src/index.ts"
       ]
     }
   },

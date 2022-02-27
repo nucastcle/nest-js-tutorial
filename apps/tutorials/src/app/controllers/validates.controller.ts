@@ -1,10 +1,13 @@
+import { HeaderInterceptor } from '@nestjs-tutorial/interceptor';
 import { HttpExceptionFilter } from '@nestjs-tutorial/exception';
 import {
   Body,
   Controller,
   Get,
+  HttpCode,
   Post,
   UseFilters,
+  UseInterceptors,
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
@@ -15,8 +18,9 @@ export class ValidatesController {
   constructor() {}
 
   @Post('validate')
+  @HttpCode(200)
   @UsePipes(new ValidationPipe({ transform: true }))
-  @UseFilters(new HttpExceptionFilter())
+  @UseInterceptors(new HeaderInterceptor())
   validate(@Body() body: FormDto) {
     return 'OK';
   }
